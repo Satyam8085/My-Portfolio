@@ -4,26 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <div class="navigationbar">
-        <div class="container">
-            <nav>
-                <div class="left">
-                    <h3>Professional Profile</h3>
-                </div>
-                <div class="right">
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
+  <div class="container">
+    <nav>
+      <div class="left profile">
+        <span class="bold-arrow">&lt;</span>
+        <img src="images/Adobe Express - file.png" alt="Profile" class="profile-pic" />
+        <span class="profile-name">Satyam Singh</span>
+        <span class="bold-arrow">/&gt;</span>
+      </div>
+      <div class="right-bar" style="display: flex; align-items: center;">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#Education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+         <div class="social-icons">
+          <a href="https://github.com/Satyam8085" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/satyam-singh2004/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
         </div>
-    </div>
+      </div>
+    </nav>
+  </div>
+</div>
+
 
     <div class="main-content">
         <div class="text-section">
@@ -133,6 +147,58 @@
 
         </div>
     </div>
+
+   <!-- Education Section -->
+<section id="Education" class="education-section">
+  <div class="container">
+    <h1 class="sub-title">Education</h1>
+
+    <div class="education-timeline">
+
+      <!-- B.Tech -->
+      <div class="education-card">
+        <div class="edu-logo">
+          <img src="images/iimt logo.png" alt="College Logo" />
+        </div>
+        <div class="edu-details">
+          <h2>B.Tech (Computer Science and Engineering)</h2>
+          <p class="college-name">IIMT College of Engineering, Greater Noida</p>
+          <p class="duration">Oct 2022 – August 2026</p>
+          <p class="description">
+           Pursuing a B.Tech in Computer Science, specializing in Frontend and Web Development. Involved in hands-on projects that enhance user experience and address real-world development challenges.
+          </p>
+        </div>
+      </div>
+
+      <!-- Schooling: 10th & 12th -->
+      <div class="education-card">
+        <div class="edu-logo">
+          <img src="images/logo school.png" alt="School Logo" />
+        </div>
+        <div class="edu-details">
+          <h2>Schooling (10th & 12th)</h2>
+          <p class="college-name">St. Paul Senior Secondary School,Samastipur, Bihar</p>
+
+          <div class="school-block">
+            <h3>Class 12th (2019 – 2021)</h3>
+            <p class="description">
+              Focused on PCM stream (Physics, Chemistry, Mathematics) and developed logical and analytical skills. Started learning programming fundamentals.
+            </p>
+          </div>
+
+          <div class="school-block">
+            <h3>Class 10th (2018 – 20)</h3>
+            <p class="description">
+              Built a strong foundation in Science and Mathematics. Cultivated interest in computers and participated in school-level tech events.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
     <!-- Projects -->
 <div id="projects" class="projects-section">
     <h1 class="sub-title">Projects</h1>
@@ -193,7 +259,7 @@ JavaScript, focused on streamlining the job search and application process.</p>
 </p>
     </div>
     <div class="right-panel">
-      <div class="contact-card">
+      <div class="contact-card" id="contact">   
         <span>📧</span>
         <a href="mailto:8085satyam@gmail.com">8085satyam@gmail.com</a>
       </div>
