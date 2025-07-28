@@ -6,6 +6,7 @@
     <title>Portfolio</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 <link rel="stylesheet" href="style.css" />
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <div class="navigationbar">
@@ -156,53 +157,51 @@
         </div>
     </div>
 
-   <!-- Education Section -->
-<section id="Education" class="education-section">
-  <div class="container">
-    <h1 class="sub-title">Education</h1>
+  <!-- education -->
+   <section id="education" class="bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white pt-20 pb-40">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-20">🎓 Education</h2>
+    <div class="relative">
+      <div class="absolute top-1/2 left-0 w-full h-1 bg-indigo-600 transform -translate-y-1/2 z-0"></div>
+      <div class="flex flex-wrap justify-between items-center gap-y-20 relative z-10">
 
-    <div class="education-timeline">
-
-      <!-- B.Tech -->
-      <div class="education-card">
-        <div class="edu-logo">
-          <img src="images/iimt logo.png" alt="College Logo" />
-        </div>
-        <div class="edu-details">
-          <h2>B.Tech (Computer Science and Engineering)</h2>
-          <p class="college-name">IIMT College of Engineering, Greater Noida</p>
-          <p class="duration">Oct 2022 – August 2026</p>
-          <p class="description">
-           Pursuing a B.Tech in Computer Science, specializing in Frontend and Web Development. Involved in hands-on projects that enhance user experience and address real-world development challenges.
-          </p>
-        </div>
-      </div>
-
-      <!-- Schooling: 10th & 12th -->
-      <div class="education-card">
-        <div class="edu-logo">
-          <img src="images/logo school.png" alt="School Logo" />
-        </div>
-        <div class="edu-details">
-          <h2>Schooling (10th & 12th)</h2>
-          <p class="college-name">St. Paul Senior Secondary School,Samastipur, Bihar</p>
-
-          <div class="school-block">
-            <h3>Class 12th (2019 – 2021)</h3>
-            <p class="description">
-              Focused on PCM stream (Physics, Chemistry, Mathematics) and developed logical and analytical skills. Started learning programming fundamentals.
-            </p>
-          </div>
-
-          <div class="school-block">
-            <h3>Class 10th (2017 – 2018)</h3>
-            <p class="description">
-              Built a strong foundation in Science and Mathematics. Cultivated interest in computers and participated in school-level tech events.
-            </p>
+        <div class="w-full md:w-1/4 relative text-center">
+          <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-6 h-6 bg-yellow-400 border-4 border-white rounded-full"></div>
+          <div class="mb-12 transform -translate-y-24">
+            <div class="bg-[#1e293b] border border-yellow-400 p-6 rounded-xl shadow-xl hover:scale-105 transition">
+              <img src="images/logo school.png" alt="10th School" class="w-10 h-10 mx-auto mb-2 rounded">
+              <h3 class="text-lg font-bold">Class 10th</h3>
+              <p class="text-sm text-yellow-300">2017 – 2018</p>
+              <p class="text-sm text-gray-300 mt-2">Foundation in Science & Math. Developed interest in tech and computers.</p>
+            </div>
           </div>
         </div>
-      </div>
 
+        <div class="w-full md:w-1/4 relative text-center">
+          <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-6 h-6 bg-green-400 border-4 border-white rounded-full"></div>
+          <div class="mt-12 transform translate-y-24">
+            <div class="bg-[#1e293b] border border-green-400 p-6 rounded-xl shadow-xl hover:scale-105 transition">
+              <img src="images/logo school.png" alt="12th School" class="w-10 h-10 mx-auto mb-2 rounded">
+              <h3 class="text-lg font-bold">Class 12th - PCM</h3>
+              <p class="text-sm text-green-300">2019 – 2021</p>
+              <p class="text-sm text-gray-300 mt-2">Studied Physics, Chemistry, Mathematics. Started programming fundamentals.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/4 relative text-center">
+          <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-6 h-6 bg-blue-500 border-4 border-white rounded-full"></div>
+          <div class="mb-12 transform -translate-y-24">
+            <div class="bg-[#1e293b] border border-blue-500 p-6 rounded-xl shadow-xl hover:scale-105 transition">
+              <img src="images/iimt logo.png" alt="IIMT" class="w-10 h-10 mx-auto mb-2 rounded">
+              <h3 class="text-lg font-bold">B.Tech CSE</h3>
+              <p class="text-sm text-blue-300">2022 – 2026</p>
+              <p class="text-sm text-gray-300 mt-2">Pursuing Computer Science. Focused on frontend development and real-world projects.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
 </section>
@@ -213,7 +212,7 @@
     <div class="projects-grid">
 
         <div class="project-card fancy-card">
-            <img src="images/project 1.png" alt="Project 1" />
+            <img src="images/Project-1.png" alt="Project 1" />
             <div class="project-info">
                 <h3>HMS CONNECT</h3>
                 <p>A hospital management platform that streamlines appointment booking, medical
@@ -227,7 +226,7 @@ enhancing patient care.</p>
         </div>
 
         <div class="project-card fancy-card">
-            <img src="images/project 2.png" alt="Project 2" />
+            <img src="images/Project-2.png"Project 2" />
             <div class="project-info">
                 <h3>LUXARY WOODS</h3>
                 <p>Delivered an elegant platform for browsing, selecting, and purchasing premium
@@ -240,7 +239,7 @@ wooden products, enhancing customer experience and boosting sales.</p>
         </div>
 
         <div class="project-card fancy-card">
-            <img src="images/3.png" alt="Project 3" />
+            <img src="images/Project-3.png" alt="Project 3" />
             <div class="project-info">
                 <h3>HIREHUB</h3>
                 <p>Developed a professional and user-centric job portal website for HireHub using HTML, CSS, Tailwind CSS, and
