@@ -1120,26 +1120,41 @@ body {
   /* Education Section */
 @media (max-width: 600px) {
   .education-timeline {
-    padding: 0.5rem;
-    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0.5rem 1rem;
   }
 
   .education-card {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center; /* center content on mobile */
-    padding: 1rem 0.5rem;
+    text-align: center;
+    padding: 0.75rem;
+    background-color: #1c1c1e; /* Optional: card background */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
 
   .edu-logo img {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.5rem;
   }
 
   .education-info {
-    text-align: center;
-    align-items: center;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+  }
+
+  .education-info h4,
+  .education-info p {
+    margin: 0;
+    font-size: 0.85rem;
   }
 }
 
