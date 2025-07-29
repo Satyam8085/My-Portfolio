@@ -522,7 +522,7 @@ body {
 
 /*---------SKILLS-----------*/
 .skills-section {
-    background: radial-gradient(circle at center, #0f172a 0%, #1e293b 100%);
+    background: radial-gradient(circle at center, #04060a 0%, #1e293b 100%);
     padding: 100px 20px;
     color: #fff;
     position: relative;
@@ -633,6 +633,48 @@ body {
 .skill-card:hover {
     animation: pulse-glow 1.5s infinite;
 }
+.glass-box {
+    backdrop-filter: blur(20px);
+    background-color: rgba(6, 6, 6, 0.05);
+    border-radius: 1.5rem;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .glass-box:hover {
+    box-shadow: 0 0 20px yellow
+  }
+
+  .icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: rgba(69, 65, 130, 0.1);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .icon-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 12px yellow
+  }
+
+  .icon-box img {
+    width: 30px;
+    height: 30px;
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.15));
+  }
+
+  .icon-box p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #e0e0e0;
+  }
 
 /*---------EDUCATION-----------*/
 .education-section {
