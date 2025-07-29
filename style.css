@@ -1143,41 +1143,97 @@ body {
   /* EDUCATION SECTION */
 
 @media (max-width: 600px) {
-  /* Align cards in column and center them */
   #education .flex.flex-wrap {
     flex-direction: column !important;
     align-items: center !important;
-    gap: 60px !important; /* reduce excessive spacing */
+    gap: 3rem !important;
+    position: relative;
   }
 
-  /* Fix card container spacing */
   #education .w-full.md\:w-1\/4 {
     width: 90% !important;
-    margin: 0 auto;
+    margin-bottom: 2.5rem;
+    position: relative;
+    z-index: 1;
   }
 
-  /* Center and space timeline dots correctly */
-  #education .w-6.h-6 {
-    position: relative !important;
-    top: 0 !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    margin-bottom: 16px;
-  }
-
-  /* Remove weird vertical transforms that cause overlap */
-  #education .-translate-y-24,
-  #education .translate-y-24 {
+  #education .transform.-translate-y-24,
+  #education .transform.translate-y-24 {
     transform: none !important;
   }
 
-  /* Optional: shrink font size slightly on very small screens */
+  #education .w-6.h-6 {
+    position: absolute !important;
+    top: -1rem !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 14px !important;
+    height: 14px !important;
+    background: linear-gradient(135deg, #facc15, #3b82f6);
+    border: 3px solid #1e293b;
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+    z-index: 10;
+  }
+
+  #education .bg-\[\#1e293b\] {
+    background: linear-gradient(to bottom right, #1e293b, #0f172a) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1.5rem !important;
+    padding: 1.8rem 1.5rem !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    backdrop-filter: blur(2px);
+    transition: all 0.3s ease;
+  }
+
+  #education .bg-\[\#1e293b\]:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.7);
+  }
+
+  #education .bg-\[\#1e293b\]::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(ellipse at center, rgba(255,255,255,0.05), transparent 70%);
+    z-index: -1;
+  }
+
+  #education img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1rem;
+    border-radius: 0.75rem;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
+  }
+
   #education h3 {
-    font-size: 16px;
+    font-size: 1.2rem !important;
+    font-weight: 600;
+    color: #f1f5f9;
+    margin-bottom: 0.3rem;
   }
 
   #education p {
-    font-size: 14px;
+    font-size: 0.92rem !important;
+    line-height: 1.7;
+    color: #cbd5e1;
+  }
+
+  #education p.text-yellow-300,
+  #education p.text-green-300,
+  #education p.text-blue-300 {
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    color: #a5f3fc;
   }
 }
 
